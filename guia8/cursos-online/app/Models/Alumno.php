@@ -20,4 +20,7 @@ class Alumno extends Model
     protected $hidden = [
         'id',
     ];
+    public function cursos(){
+        return $this->belongsToMany(Curso::class);
+    }
 }

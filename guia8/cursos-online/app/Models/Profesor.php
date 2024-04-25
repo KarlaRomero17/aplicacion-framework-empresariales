@@ -19,4 +19,10 @@ class Profesor extends Model
     protected $hidden = [
         'id',
     ];
+
+    public function cursos(){
+        return $this->hasMany(Curso::class);
+       }
+
+       
 }
